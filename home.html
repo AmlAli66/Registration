@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register System</title>
+    <link rel="icon" href="images/0694661d8d6620c76eb0c5736505632e.jpg">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+
+</head>
+
+<body id="home-page">
+    <nav class="bg-black bg-opacity-10 py-4 fixed-top">
+        <div class="container d-flex justify-content-between">
+            <h2 class="">SMART LOGIN </h2>
+            <a class="btn fs-3 py-0 d-flex align-items-center" href="./index.html">log out</a>
+        </div>
+    </nav>
+    <header class="pt-5 mt-5 ">
+        <div id="welcomeBox" class="d-flex justify-content-center align-items-center mt-5 ">
+            <h1 class="text-center">Register System</h1>
+        </div>
+    </header>
+
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script>
+        var loggedInUser = localStorage.getItem("loggedInUser");
+        var welcomeBox = document.querySelector("#welcomeBox");
+
+        document.addEventListener("DOMContentLoaded", function () {
+            if (loggedInUser) {
+                var parsedUser = JSON.parse(loggedInUser);
+                welcomeBox.innerHTML = `<h1>Welcome ${parsedUser.uName}!</h1>`;
+            } else {
+                // window.location.href = "login.html";
+                welcomeBox.innerText = "No user logged in.";
+            }
+        })
+
+    </script>
+
+
+</body>
+
+</html>

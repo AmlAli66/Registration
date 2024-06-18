@@ -1,0 +1,99 @@
+.form-control {
+    border: 1px solid #DDD;
+}
+
+body {
+    background-image: url(../images/0694661d8d6620c76eb0c5736505632e.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 70px;
+    height: 100vh;
+}
+
+header label {
+    color: #196462;
+}
+
+h1 {
+    position: relative;
+    color: #31471f;
+    font-style: italic
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #c3e7de;
+    top: 52px;
+    z-index: -1;
+    width: 100%;
+    transition: all 0.4s;
+}
+
+h1:hover::after {
+    top: 30px;
+}
+
+.special-header {
+    background-image: linear-gradient(to right, #245b12, #7bc862);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-container {
+    background-color: #97d980bf;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0rem #b4f2ec;
+    border-color: #268f49;
+}
+
+.save-btn {
+    border: 1px solid #559240;
+    font-size: 22px;
+    color: #19643b;
+}
+
+.save-btn:hover {
+    background-color: #559240;
+    color: #fff;
+
+}
+
+::selection {
+    background: rgb(145, 192, 193);
+}
+
+.list-header {
+    color: #22832a;
+}
+
+#listBody {
+    color: #526f74;
+}
+
+#welcomeBox {
+    background-color: #559240e5;
+    box-shadow: 0 0 100px 1px #3a9657;
+    width: 700px;
+    margin: auto;
+    padding: 100px;
+    border-radius: 15px;
+}
+
+nav {
+    color: #31471f;
+}
+
+.info {
+    color: #19643b;
+    font-size: 22px;
+}
+
+.info a {
+    color: #00996b;
+}
